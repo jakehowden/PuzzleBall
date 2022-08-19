@@ -35,8 +35,8 @@ jobs:
             Library-build-
             Library-
 
-      -name: Run unity builder
-      working-directory: ./src
-      - uses: game-ci/unity-builder@v2
-        with:
-          targetPlatform: StandaloneWindows64
+      - name: Run unity builder
+        working-directory: ./src
+        - uses: game-ci/unity-builder@v2
+          with:
+            targetPlatform: StandaloneWindows64
