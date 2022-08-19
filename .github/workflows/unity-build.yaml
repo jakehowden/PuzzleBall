@@ -25,6 +25,7 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
+          
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -33,7 +34,8 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
+
       - uses: game-ci/unity-builder@v2
-        working-directory: ./src
         with:
           targetPlatform: StandaloneWindows64
+        working-directory: ./src
