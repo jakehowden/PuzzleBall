@@ -4,8 +4,6 @@ jobs:
   buildWindows:
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./src
     strategy:
       fail-fast: false
     steps:
@@ -36,5 +34,6 @@ jobs:
             Library-build-
             Library-
       - uses: game-ci/unity-builder@v2
+        working-directory: ./src
         with:
           targetPlatform: StandaloneWindows64
