@@ -30,7 +30,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: src/Library
+          path: Library
           key: Library-build-StandaloneWindows64
           restore-keys: |
             Library-build-
