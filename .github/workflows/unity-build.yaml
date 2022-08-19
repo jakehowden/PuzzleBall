@@ -4,6 +4,8 @@ jobs:
   buildWindows:
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./src
     strategy:
       fail-fast: false
     steps:
