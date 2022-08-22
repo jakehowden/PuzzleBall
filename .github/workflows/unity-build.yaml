@@ -4,9 +4,6 @@ jobs:
   buildWindows:
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src
     strategy:
       fail-fast: false
     steps:
@@ -28,6 +25,7 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
+          
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -36,13 +34,9 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-      - uses: game-ci/unity-builder@v2
-        run: |
-          ls
-        with:
-          targetPlatform: StandaloneWindows64
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: build-StandaloneWindows64
-          path: build/StandaloneWindows64
+      - name: Run unity builder
+        working-directory: ./src
+        - uses: game-ci/unity-builder@v2
+          with:
+            targetPlatform: StandaloneWindows64
