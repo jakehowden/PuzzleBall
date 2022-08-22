@@ -25,6 +25,7 @@ jobs:
 
       - name: Git LFS Pull
         run: |
+          ls
           git lfs pull
           git add .
           git reset --hard
@@ -37,8 +38,6 @@ jobs:
             Library-build-
             Library-
       - uses: game-ci/unity-builder@v2
-        run: |
-          ls
         with:
           targetPlatform: StandaloneWindows64
 
