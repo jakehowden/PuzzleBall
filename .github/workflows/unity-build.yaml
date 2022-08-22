@@ -37,6 +37,8 @@ jobs:
             Library-build-
             Library-
       - uses: game-ci/unity-builder@v2
+        run: |
+          ls
         with:
           targetPlatform: StandaloneWindows64
 
