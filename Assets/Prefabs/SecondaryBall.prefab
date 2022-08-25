@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -8.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.891
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 17.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
@@ -65,7 +65,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_Name
-      value: ball
+      value: SecondaryBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ddb370125f53b743bdd62de702c8197,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ddb370125f53b743bdd62de702c8197, type: 3}
@@ -91,19 +96,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7637571639470869158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866474889461481108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5265214042b7d7e4faf64ef765945bdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!135 &1466309980
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -129,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7c788ef6d90bfe64cb1ef9b2a4e9968a,
+  m_Actions: {fileID: -944628639613478452, guid: c038a9480276cb846ab454159c266eea,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
@@ -148,3 +140,28 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7637571639470869158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866474889461481108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5265214042b7d7e4faf64ef765945bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!114 &1130988087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866474889461481108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa51e1e29c6e7204ab2252c536c0f3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
