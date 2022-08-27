@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -27,7 +24,7 @@ public class BallController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 movement = new (movementX, 0.0f, movementY);
+        Vector3 movement = new(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
     }
