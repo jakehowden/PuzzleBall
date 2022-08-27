@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.97
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9
+      value: 3.891
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.12
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ddb370125f53b743bdd62de702c8197,
         type: 3}
@@ -109,6 +109,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9975766
   m_Center: {x: -0.00000029802322, y: -0.0000001490116, z: 0}
+--- !u!114 &1130988087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866474889461481108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa51e1e29c6e7204ab2252c536c0f3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1466309986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &1130988087
+--- !u!114 &1130988079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
