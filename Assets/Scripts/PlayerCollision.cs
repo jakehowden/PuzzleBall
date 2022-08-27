@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,8 +10,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(TagConstants.Player))
         {
-            Debug.Log("Quitting application...");
-            Application.Quit();
+            SceneLoader.Load(Scene.MainMenu);
         }
     }
 }
