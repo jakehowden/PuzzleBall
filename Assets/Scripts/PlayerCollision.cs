@@ -1,4 +1,5 @@
 using UnityEngine;
+using Assets.Scripts;
 
 public class PlayerCollision : MonoBehaviour
 {
